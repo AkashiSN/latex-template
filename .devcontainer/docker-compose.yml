@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  latexmk:
+    image: akashisn/latexmk:2023
+    environment:
+      SHELL: "/bin/bash"
+    command: sleep infinity
+    volumes:
+      - ../:/workdir
